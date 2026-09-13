@@ -1,15 +1,38 @@
 using UnityEngine;
 public class FirstScripts : MonoBehaviour
 {
-    void Start()
+
+    /// const int DANGER_HP = 40;
+    /// const int WARNING_HP = 60;
+    /// const int DEAD_HP = 0;
+    /// 
+
+   void Start()
+   {
+        Debug.Log(PlusNumber(3, 97));
+   }
+
+    int PlusNumber(int a, int b)
     {
-        Debug.Log(2 != 4 || 6 != 6);
-        Debug.Log(2 != 4 && 6 != 6);
-        Debug.Log(false == false);
-        Debug.Log(false != true);
-        Debug.Log(2 != 4);
-        Debug.Log(6 != 6);
-        Debug.Log(7 != 14);
-        Debug.Log(!false);
+        int sum = a + b;
+        return sum;
+    }
+
+    int MinusNumber(int a, int b)
+    {
+        int sum = a - b;
+        return sum;
+    }
+
+    int TimesNumber(int a, int b)
+    {
+        int sum = a * b;
+        return sum;
+    }
+
+    int DividedNumber(int a, int b)
+    {
+        int sum = a / b;
+        return sum;
     }
 }
